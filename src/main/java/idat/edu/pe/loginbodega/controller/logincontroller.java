@@ -19,7 +19,7 @@ public class logincontroller {
     @PostMapping("/login")
     public String login(@ModelAttribute("loginmodel") loginmodel objlogin,
                         Model model){
-        if (objlogin.getUsuario().equals("casanova") && objlogin.getPassword().equals("12345")) {
+        if (objlogin.getUsuario().equals("casanova") && objlogin.getPassword().equals("1234")) {
             model.addAttribute("mensaje", "bienvenido " + objlogin.getUsuario());
             return "menuprincipal";
         } else if (objlogin.getUsuario().equals("galan") && objlogin.getPassword().equals("12345")) {

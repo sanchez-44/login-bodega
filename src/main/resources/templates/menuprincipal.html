@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link th:href="@{/styles/bootstrap/bootstrap.css}"
+          rel="stylesheet">
+    <script th:src="@{/scripts/bootstrap/bootstrap.bundle.js}"
+            type="text/javascript"></script>
+</head>
+    <title>Menú Principal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        nav {
+            background-color: #39a064;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: rgb(163, 39, 39);
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <a href="#ventas">Ventas</a>
+    <a href="#registro_ventas">Registro de Ventas</a>
+    <a href="#atencion_usuario">Atención al Usuario</a>
+    <a href="#acerca_bodega">Acerca de la Bodega</a>
+    <a href="#contactos">Contactos</a>
+</nav>
+</body>
+</html>

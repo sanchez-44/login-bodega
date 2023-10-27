@@ -32,5 +32,6 @@ public class logincontroller {
         model.addAttribute("visualizar", true);
         return "login";
     }
+    //Bruno sanchez
 
 }

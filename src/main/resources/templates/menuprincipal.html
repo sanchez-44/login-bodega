@@ -30,15 +30,59 @@
             background-color: #ddd;
             color: rgb(163, 39, 39);
         }
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #39a064;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            float: none;
+            display: block;
+            text-align: left;
+            padding: 12px 16px;
+            text-decoration: none;
+            color: #f2f2f2;
+        }
+        .dropdown-content a:hover {
+            background-color: #ddd;
+            color: rgb(163, 39, 39);
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
     </style>
 </head>
 <body>
-<nav>
-    <a href="#ventas">Ventas</a>
-    <a href="#registro_ventas">Registro de Ventas</a>
-    <a href="#atencion_usuario">Atención al Usuario</a>
-    <a href="#acerca_bodega">Acerca de la Bodega</a>
-    <a href="#contactos">Contactos</a>
-</nav>
+    <nav>
+        <a href="#ventas">Registrar Ventas</a>
+
+        <!-- Opciones desplegables para Registro de Ventas -->
+        <div class="dropdown">
+            <a href="#registro_ventas">Registro de Ventas</a>
+            <div class="dropdown-content">
+                <a href="#historial_ventas">Historial de Ventas</a>
+                <a href="#estadisticas_ventas">Estadísticas</a>
+            </div>
+        </div>
+
+        <!-- Opciones desplegables para Atención al Usuario -->
+        <div class="dropdown">
+            <a href="#atencion_usuario">Atención al Usuario</a>
+            <div class="dropdown-content">
+                <a href="#contacto">Contacto</a>
+                <a href="#preguntas_frecuentes">FAQ</a>
+            </div>
+        </div>
+
+        <a href="#acerca_bodega">Acerca de la Bodega</a>
+        <a href="#contactos">Proveedores</a>
+    </nav>
 </body>
 </html>
